@@ -1,0 +1,112 @@
+
+@very-light-gray: #d1d1d1;
+@gray: #373b41;
+@dark-gray: #282a2e;
+@very-dark-gray: #1d1f21;
+@cyan: #8abeb7;
+@blue: #81a2be;
+@purple: #b294bb;
+@green: #89cb61;
+@red: #cc6666;
+
+@orange: #de935f;
+@orange-intense: #FFB454;
+@light-orange: #f0c674;
+
+@editor-bg                      : rgb(54,52,90);
+@editor-gutter-bg               : darken(@editor-bg, 5%);
+@editor-gutter-current-line-bg  : lighten(@editor-bg, 10%);
+@editor-folders-bg              : darken(@editor-bg, 8%);
+@editor-tabs-bg                 : @editor-folders-bg;
+@editor-tab-hover-bg            : lighten(@editor-tabs-bg, 20%);
+@editor-tab-active-bg           : darken(@editor-tabs-bg, 10%);
+@editor-tab-active-border       : #265fb7;
+
+@editor-line-highlight          : lighten(@editor-bg, 3%);
+@editor-cursor                  : #fff;
+@editor-text                    : #d1d1d1;
+@editor-text-content            : #0c0e2d;
+
+@editor-indentation             : darken(@editor-bg, 3%);
+@editor-indentation-stack       : darken(@editor-bg, 9%);;
+@editor-indentation-active      : lighten(@editor-bg, 10%);;
+
+@syntax-comment                 : #545282;
+@syntax-punctuation             : #C9D4D1;
+
+@syntax-string                  : #de935f;
+@syntax-number                  : #91d5ff;
+@syntax-unquoted                : #ababab;
+@syntax-built-in-constant       : #e8b107;
+@syntax-boleean                 : #12ff50;
+@syntax-var-name                : #f5f5f5;
+@syntax-var-keyword             : #868bad;
+@syntax-custom-constant         : hsl(hue(@syntax-var-keyword), saturation(@syntax-var-keyword), 75%);
+
+@syntax-inherited-class         : #F92672;
+@syntax-module                  : @syntax-inherited-class;
+@syntax-function                : #71a0cc;
+@syntax-function-keyword        : @syntax-var-keyword;
+//@syntax-function-argument     : #A6E22E;
+@syntax-function-argument       : #54d67e;
+
+@syntax-object                  : #f5f5f5;
+@syntax-object-property         : darken(@syntax-object, 5%);
+@syntax-library-method          : #66CDEF;
+@syntax-interpolation           : #ff482b;
+
+@syntax-tag-name                : #6278F5;
+@syntax-tag-mark                : #5f48da;
+@syntax-tag-definition          : @syntax-punctuation;
+@syntax-tag-attribute           : hsl(hue(@syntax-string), saturation(@syntax-string), 52%);
+//@syntax-tag-attribute           : #FF8483;
+@syntax-tag-id                  : #CC495D;
+
+@syntax-css-id-selector         : @syntax-tag-id;
+@syntax-css-pseudo-class        : #D4D065;
+@syntax-css-pseudo-element      : @syntax-css-pseudo-class;
+@syntax-css-keyframe            : @syntax-css-pseudo-class;
+@syntax-css-class-dot           : @syntax-tag-attribute;
+@syntax-css-property-name       : #2FB7CC;
+@syntax-css-property-value      : #8573FF;
+@syntax-css-property-value-unit : #c0afff;
+
+@syntax-keyword-color           : darken(@syntax-conditional, 30%);
+@syntax-conditional             : #FF62EF;
+@syntax-operator-color          : lighten(@syntax-conditional, 15%);
+
+@syntax--error-bg               : #FA252D;
+@syntax--error                  : #780000;
+
+@syntax--deprecated-bg          : #D6976D;
+@syntax--deprecated             : #804742;
+
+// This defines all syntax vars that syntax themes must implement when they
+// include a syntax-vars.less file.
+
+// General colors
+@syntax-text-color: @editor-text;
+@syntax-cursor-color: white;
+@syntax-selection-color: @editor-text;
+@syntax-background-color: @editor-text;
+
+// Guide colors
+@syntax-wrap-guide-color: darken(@editor-text, 10%);
+@syntax-indent-guide-color: @gray;
+@syntax-invisible-character-color: @gray;
+
+// For find and replace markers
+@syntax-result-marker-color: @editor-text;
+@syntax-result-marker-color-selected: white;
+
+// Gutter colors
+@syntax-gutter-text-color: @editor-text ;
+@syntax-gutter-text-color-selected: @editor-text ;
+@syntax-gutter-background-color: darken(@editor-text, 10%);
+@syntax-gutter-background-color-selected: darken(@editor-text, 5%);
+
+// For git diff info. i.e. in the gutter
+@syntax-color-renamed: @blue;
+@syntax-color-added: @green;
+@syntax-color-modified: @orange;
+@syntax-color-removed: @red;
