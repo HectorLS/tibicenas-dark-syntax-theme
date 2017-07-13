@@ -1,3 +1,13 @@
 .DS_Store
 npm-debug.log
 node_modules
+
+*.html
+*.js
+*.css
+*.scss
+*.ejs
+*.pug
+*.php
+*.py
+*.sample-files/*

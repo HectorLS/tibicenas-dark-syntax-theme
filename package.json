@@ -1,11 +1,17 @@
 {
   "name": "tibicenas-dark-syntax",
   "theme": "syntax",
-  "version": "0.0.0",
-  "description": "A short description of your syntax theme",
+  "version": "0.0.1",
+  "description": "Syntax theme focus on web development",
   "keywords": [
     "syntax",
-    "theme"
+    "theme",
+    "dark",
+    "highlight",
+    "frontend",
+    "web",
+    "template",
+    "react"
   ],
   "repository": "https://github.com/atom/tibicenas-dark-syntax",
   "license": "MIT",
